@@ -1,0 +1,125 @@
+.App{
+ margin: 0.5rem;
+  background-color: rgb(190, 242, 240);
+  border-radius: 1vw;
+  
+  border : 2px solid black
+}
+.Head{
+   display: flex;
+  justify-content: space-between;
+  padding: 0vw;
+  border: 0.1rem solid black;
+  border-radius: 1vw;
+
+  margin: 0.8rem;
+  margin-bottom:  0px;
+ }
+ .Title{
+  margin-left: 2.5rem;
+   
+  width: 10%;
+   height: 50%;
+ }
+.Navlist >ul{
+  list-style:none;
+  display:  flex;
+  justify-content:  space-between;
+  width: 25rem;
+}
+
+input{
+  border-radius: 5px;
+  height: 2rem;
+  width: 30rem;
+  margin-top: 2.3rem;
+  margin-left: 10rem;
+   font-size: 1rem;
+}
+.search{
+  height: 2.3rem;
+  width: 7rem;
+  border-radius: 1vw;
+  margin-top: 2.3rem;
+  margin-left: 0.1rem;
+}
+button:hover,input:hover { 
+ 
+  border: 2px  solid#f1b1b1;
+
+  
+   transition: 0.3s;
+  
+ }
+
+
+.logout{
+ 
+  height: 100%;
+  width: 4rem;
+  border-radius: 1vw;
+
+  /* margin: 2.3rem 0.5rem  0px 0px ; */
+}
+/* 
+.Navlist>ul>li{
+ margin: 1.5rem;
+ margin-right: 0px;
+
+} */
+
+.card{
+  border: 2px solid black;
+  margin: 1rem;
+}
+
+
+.Navlist2>ul{
+  list-style:none;
+  display:  flex;
+  justify-content:  space-between;
+  width: 20rem;
+
+}
+.Navlist2{
+  width: 98%;
+  border: 2px solid black;
+  margin:0px 2rem 0.8rem 0.8rem ;
+  border-radius: 1vw;
+
+
+
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-center;
+  margin: 1rem 3rem;
+}
+
+.card {
+  border: 0.1rem solid #ccc;
+  padding: 20px;
+  width: 10rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card >img {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+}
+
+.card h2 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card h3 {
+  color: green;
+}
+
+
+
