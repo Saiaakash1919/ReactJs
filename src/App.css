@@ -117,8 +117,9 @@ button:hover,input:hover,.card:hover {
 
 .card >img {
   width: 90%;
-  height: 16vw;
+  height: 15vw;
   object-fit: contain;
+  
 }
 
 .card h2 {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import mainlogo from './mainlogo.png'; 
+ import {Link} from "react-router-dom";
 
 
 
@@ -46,10 +47,10 @@ import mainlogo from './mainlogo.png';
       <div class="Navlist2 ">
       <ul>
 
-     <li>Home</li>
-     <li>About</li>
-     <li>Contact</li>
-     <li>Cart</li>
+     <Link to = "/"><li>Home</li> </Link>
+     <Link to = "/about"><li>About</li></Link>
+     <Link to = "/contact"><li>Contact</li></Link>
+     <Link  to = "/cart"><li>Cart</li></Link>
      </ul>
        </div>
       

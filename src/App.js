@@ -3,6 +3,7 @@ import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
 import './App.css'; // Assuming you still want to keep the styles
+import { BrowserRouter,Router,Switch} from "react-router-dom";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState(""); // State to store the search term
@@ -14,7 +15,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <BrowserRouter>
       <Header onSearch={handleSearch} /> {/* Pass search handler to Header */}
+      </BrowserRouter>
       <Body searchTerm={searchTerm} /> {/* Pass searchTerm to Body */}
       <Footer />
     </div>
