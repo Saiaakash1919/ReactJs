@@ -47,12 +47,13 @@ import mainlogo from './mainlogo.png';
       <div class="Navlist2 ">
       <ul>
 
-     <Link to = "/"><li>Home</li> </Link>
-     <Link to = "/about"><li>About</li></Link>
-     <Link to = "/contact"><li>Contact</li></Link>
-     <Link  to = "/cart"><li>Cart</li></Link>
+     <Link to = "/" className="link"><li>Home</li> </Link>
+     <Link to = "/About"  className="link"><li>About</li></Link>
+     <Link to = "/contact" className="link"><li>Contact</li></Link>
+     <Link  to = "/cart" className="link"><li>Cart</li></Link>
      </ul>
        </div>
+      
       
       </>
     );

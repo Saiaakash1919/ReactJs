@@ -2,6 +2,7 @@
 
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -9,7 +10,7 @@ const Card = ({ item }) => {
     return (
       <div className="card">
         <img src={item.image} alt={item.title} />
-        <h2>{item.title}</h2>
+       <Link to ={`/About/${item.title}`}  className="link"> <h2 >{item.title}</h2> </Link>
         <h3>${item.price}</h3>
       
        

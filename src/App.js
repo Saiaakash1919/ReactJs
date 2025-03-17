@@ -18,7 +18,9 @@ const App = () => {
       <BrowserRouter>
       <Header onSearch={handleSearch} /> {/* Pass search handler to Header */}
       </BrowserRouter>
+      <BrowserRouter>
       <Body searchTerm={searchTerm} /> {/* Pass searchTerm to Body */}
+      </BrowserRouter>
       <Footer />
     </div>
   );

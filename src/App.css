@@ -85,7 +85,7 @@ button:hover,input:hover,.card:hover {
   list-style:none;
   display:  flex;
  
-
+  
   justify-content:  space-between;
   width: 25vw;
 
@@ -94,10 +94,11 @@ button:hover,input:hover,.card:hover {
   width: 98%;
   border: 2px solid black;
   border-radius: 1rem;
-
+ 
   margin:0px 2vw 0.8vw 0.8vw;
-
-
+}
+.link {
+  text-decoration:  none ;
 }
 .body {
   display: flex;
