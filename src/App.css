@@ -85,7 +85,11 @@ button:hover,input:hover,.card:hover {
   list-style:none;
   display:  flex;
  
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> main
   justify-content:  space-between;
   width: 25vw;
 
@@ -94,11 +98,18 @@ button:hover,input:hover,.card:hover {
   width: 98%;
   border: 2px solid black;
   border-radius: 1rem;
+<<<<<<< HEAD
  
   margin:0px 2vw 0.8vw 0.8vw;
 }
 .link {
   text-decoration:  none ;
+=======
+
+  margin:0px 2vw 0.8vw 0.8vw;
+
+
+>>>>>>> main
 }
 .body {
   display: flex;
@@ -118,9 +129,14 @@ button:hover,input:hover,.card:hover {
 
 .card >img {
   width: 90%;
+<<<<<<< HEAD
   height: 15vw;
   object-fit: contain;
   
+=======
+  height: 16vw;
+  object-fit: contain;
+>>>>>>> main
 }
 
 .card h2 {
