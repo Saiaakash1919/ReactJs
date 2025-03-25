@@ -3,10 +3,14 @@ import React, { useState } from "react";
 import './App.css';
 import mainlogo from './mainlogo.png';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+
 
 const Header = ({ onSearch }) => {
   const [searchText, setSearchText] = useState("");
   const [isLoggedin, setIsLoggedin] = useState(false);
+  const navigate = useNavigate(true ); 
 
   const handleChange = (e) => {
     setSearchText(e.target.value); // Update the state with the input value
@@ -24,7 +28,7 @@ const Header = ({ onSearch }) => {
     <>
       <div className="Head">
         <img className="Title" src={mainlogo} alt="Logo" />
-        <input
+        <input className="Items-search"
           type="text"
           placeholder="Search"
           value={searchText}
@@ -33,9 +37,9 @@ const Header = ({ onSearch }) => {
         <button className="search" onClick={handleClick}>Search</button>
         <div className="Navlist">
           {isLoggedin ? (
-            <button className="logout" onClick={() => setIsLoggedin(false)}>Logout</button>
+           <button className="logout" onClick={() => {setIsLoggedin(false); navigate('/LoginPage');}}>Logout</button>
           ) : (
-            <button className="logout" onClick={() => setIsLoggedin(true)}>Login</button>
+            <button className="logout" onClick={() => {setIsLoggedin(true); navigate('/LoginPage'); }}>Logout</button>
           )}
         </div>
       </div>
