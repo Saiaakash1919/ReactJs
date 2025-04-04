@@ -27,8 +27,6 @@ const Body = ({ searchTerm }) => {
     item.title && item.title.toLowerCase().includes(searchTerm?.toLowerCase() || '') // Case-insensitive search
   );
 
- 
-
   if (error) {
     return <p>Error: {error.message}</p>; // Show error message if there's an error
   }

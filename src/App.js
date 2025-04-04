@@ -10,7 +10,6 @@ const App = () => {
   const handleSearch = (term) => {
     setSearchTerm(term); // Update the search term state
   };
-
   return (
     <div className="App">
       {/* Pass handleSearch as onSearch prop to Outlet */}
