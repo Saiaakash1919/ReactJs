@@ -6,6 +6,8 @@ import Body from "../Body";
 import Header from "../Header";
 import Product from "./Product";
 import Loginpage from "./Loginpage";
+import HeroSection from "../Heroseaction";
+
 
 const Outlet = ({ onSearch, searchTerm }) => {
   return (
@@ -13,10 +15,12 @@ const Outlet = ({ onSearch, searchTerm }) => {
       <BrowserRouter>
         {/* Pass the onSearch function as a prop to Header */}
         <Header onSearch={onSearch} />
-        
+      
+        <HeroSection/>
         {/* Define routes */}
         <Routes>
           {/* Use element prop to render components */}
+
           <Route path="/" element={<Body searchTerm={searchTerm} />} />
           <Route path="/About/:title" element={<Product />}/>
           
@@ -27,6 +31,7 @@ const Outlet = ({ onSearch, searchTerm }) => {
           <Route path="/Cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
+      
     </>
   );
 };

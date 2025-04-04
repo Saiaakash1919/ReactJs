@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import './App.css'; // Assuming you still want to keep the styles
 import Outlet from "./components/Outlet"; // Import Outlet
 
+
 const App = () => {
   const [searchTerm, setSearchTerm] = useState(""); // State to store the search term
 
@@ -11,13 +12,17 @@ const App = () => {
     setSearchTerm(term); // Update the search term state
   };
   return (
+    
     <div className="App">
+      
       {/* Pass handleSearch as onSearch prop to Outlet */}
       <Outlet onSearch={handleSearch} searchTerm={searchTerm} />
+     
 
       {/* Footer Component */}
       <Footer />
     </div>
+  
   );
 };
 

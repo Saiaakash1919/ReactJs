@@ -5,7 +5,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Loginpage = () => {
-  const [ setIsLoggedin] = useState(false);
+
+  const [isLoggedin, setIsLoggedin] = useState(false);
   const navigate = useNavigate(true ); 
 
   return (
@@ -13,7 +14,7 @@ const Loginpage = () => {
           <div className='Logindiv'>
 
           <input className= 'Loginpage' type="text"  placeholder = "UserName" />
-           <input className= 'Loginpage' type="password" />
+           <input className= 'Loginpage' type="password" placeholder = "Password" />
       <button className='Submit-Button' onClick={() => {setIsLoggedin(true); navigate('/'); }}>Submit</button>
 
       </div>

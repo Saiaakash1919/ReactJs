@@ -1,63 +1,97 @@
-/* General styles */
-.link {
-  color: black;
+/* Apply background to the entire page */
+body {
+  margin: 0;
+  padding: 20px;
+  height: 100vh; /* Ensure full viewport height */
+  background-image: url('./hero-background.png');
+  background-size: 180%; /* Ensure the image covers the entire viewport */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
+  color: #fdfdfd;
+  font-family: Arial, sans-serif;
 }
 
+/* The rest of your styles */
 .App {
-  background-color: rgb(232, 237, 242);
+  color: #fdfdfd;
+  text-align: center;
+  /* padding: 50px; */
   border: 0.1rem solid black;
   border-radius: 1rem;
   margin: 0.5vw;
-  font-family: Arial, sans-serif; /* Ensure consistent font styling */
 }
 
 .Head {
   display: flex;
   padding: 0vw;
-  border: 0.1rem solid black;
   margin: 0.8vw;
-  border-radius: 1rem;
-  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .Title {
   margin-left: 2.5vw;
   width: 10%;
   height: 50%;
-  font-size: 2rem; /* Title font size */
-}
-
-.Navlist > ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 25rem;
+  font-size: 2rem;
 }
 
 input {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   height: 2rem;
-  width: 35vw;
+  width: 35%;
   margin-top: 2.3vw;
-  margin-left: 20vw;
+  margin-left: 15vw;
   font-size: 1vw;
+  box-shadow: 1px 4px 6px 2px #333;
 }
 
 .search {
   height: 2.2rem;
   width: 7vw;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin-top: 2.4vw;
+  box-shadow: 1px 4px 6px 2px #333;
 }
+
+.Navlist > ul {
+  list-style: none;
+  display: flex;
+  margin-top: 3vh;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 5px;
+  color: #fdfdfd;
+}
+
+.link {
+  margin-left: 20px;
+}
+
+.logout {
+  height: 100%;
+  width: 4rem;
+  border-radius: 0.5rem;
+}
+
+.hero {
+  background-size: cover; /* Ensure it covers the section */
+  background-position: center center;
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  padding: 50px;
+ 
+}
+
 
 button:hover,
 input:hover,
 .card:hover {
-  border: 0.1rem solid #df5a5a;
+  background-color: #403c3c;
   transition: 0.5s;
   text-decoration: underline transparent;
   text-shadow: 1px 1px 4px rgb(97, 96, 96);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 .card:hover>h3{
   text-decoration: none;
@@ -65,6 +99,9 @@ input:hover,
 
 .link:hover {
   text-shadow: 1px 2px 3px rgb(97, 96, 96);
+  margin-top: 2.5vh;
+  transition: 0.3s;
+  text-decoration: underline 2px solid rgb(206, 203, 198);
 }
 
 .card:hover > img {
@@ -74,36 +111,23 @@ input:hover,
   transition: 0.5s;
 }
 
-.logout {
-  height: 100%;
-  width: 4rem;
-  border-radius: 1rem;
-  margin-left: 20vw;
-}
 
 .card {
-  border: 2px solid black;
+  border: 2px solid  #403c3c;
   margin: 1vw;
   padding: 20px;
   text-align: center;
 }
 
-.Navlist2 > ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 25vw;
-}
 
-.Navlist2 {
-  width: 98%;
-  border: 2px solid black;
-  border-radius: 1rem;
-  margin: 0px 2vw 0.8vw 0.8vw;
-}
+
 
 .link {
   text-decoration: none;
+  margin-top: 4vh;
+  margin-right: 50px;
+  color: #e3e0e0;
+  
 }
 
 .body {
@@ -115,11 +139,12 @@ input:hover,
 }
 
 .card {
-  border: 0.1rem solid #ccc;
+  background-color:  transparent;
+  border: 0.1rem solid 322c2c;
   padding: 20px;
   width: 10vw;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #443c3c;
 }
 
 .card > img {
@@ -134,13 +159,13 @@ input:hover,
 }
 
 .card h3 {
-  color: green;
+  color: rgb(190, 192, 190);
 }
 
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  
   text-align: center;
   border-radius: 1rem;
   border-top-left-radius: 0px;
@@ -283,14 +308,17 @@ input:hover,
 .shimmer-card{
    width: 200px;
    height: 300px;
-   background: rgb(176, 174, 174);
-   margin: 30px;
+   background: linear-gradient(90deg , #403c3c 25%,#4e4a4a 50%,#6e6363 70%);
+   margin: 20px;
+  
    margin-left: 50px;
 }
+
 .Loginpage{
   width: 20%;
   height: 3rem;
    margin-left: 550px;
+   /* border-radius: 1.5rem; */
    box-shadow: 1px 4px 5px 2px #333;
    font-size: 1.2rem;
 
@@ -300,8 +328,9 @@ input:hover,
   height: 3rem;
   margin-top: 20px;
   margin-left: 620px;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   background: #776b6b;
   box-shadow: 1px 4px 5px 2px #333;
 }
+
 

@@ -35,21 +35,23 @@ const Header = ({ onSearch }) => {
         />
         <button className="search" onClick={handleClick}>Search</button>
         <div className="Navlist">
-          {isLoggedin ? (
-           <button className="logout" onClick={() => {setIsLoggedin(false); navigate('/LoginPage');}}>Logout</button>
-          ) : (
-            <button className="logout" onClick={() => {setIsLoggedin(true); navigate('/LoginPage'); }}>Logout</button>
-          )}
-        </div>
-      </div>
-      <div className="Navlist2">
         <ul>
           <Link to="/" className="link"><li>Home</li></Link>
           <Link to="/About" className="link"><li>About</li></Link>
           <Link to="/contact" className="link"><li>Contact</li></Link>
           <Link to="/cart" className="link"><li>Cart</li></Link>
+          <Link to="/LoginPage" className="link"><li> {isLoggedin ? (
+           <button className="logout" onClick={() => {setIsLoggedin(false); navigate('/LoginPage');}}>Logout</button>
+          ) : (
+            <button className="logout" onClick={() => {setIsLoggedin(true); navigate('/LoginPage'); }}>Logout</button>
+          )}</li></Link>
+
         </ul>
+         
+        </div>
       </div>
+
+      
     </>
   );
 };
