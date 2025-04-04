@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 
-
 const Header = ({ onSearch }) => {
   const [searchText, setSearchText] = useState("");
   const [isLoggedin, setIsLoggedin] = useState(false);

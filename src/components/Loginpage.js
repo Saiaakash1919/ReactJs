@@ -5,8 +5,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Loginpage = () => {
-
-  const [isLoggedin, setIsLoggedin] = useState(false);
+  const [ setIsLoggedin] = useState(false);
   const navigate = useNavigate(true ); 
 
   return (

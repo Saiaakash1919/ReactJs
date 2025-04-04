@@ -30,5 +30,4 @@ const Outlet = ({ onSearch, searchTerm }) => {
     </>
   );
 };
-
 export default Outlet;
